@@ -1,4 +1,4 @@
-# MarkOpSec Portfolio Website
+# MarkMYZN Portfolio Website
 
 This is my personal website where I introduce myself and share my projects, skills, and favorite tech picks.  
 It has a clean and simple design with different sections like **Home**, **Projects**, **Skills**, and **Contact**.  
