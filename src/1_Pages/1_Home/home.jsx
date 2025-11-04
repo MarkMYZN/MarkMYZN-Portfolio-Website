@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import React from 'react'
 import styles from './home.module.css'
-import NavBar from '../../2_Components/1_NavBar/navbar.jsx'
+import NavBar from '../../2_Components/1_navbar/navbar.jsx';
 
-function App() {
+function Home() {
   return(
     <>
     <title>MarkOpSec's Portfolio Website</title>
@@ -20,11 +20,11 @@ function App() {
 
         <div className={styles.container}>
           <div className={styles.items}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS Logo" width="100px" height="100px"/>
-              <div className={styles.itemText}>
-                <h3>Portfolio Website</h3>
-                <p>This is my Personal Portfolio Website</p>
-              </div>
+            <img src="assets\web_pic.png" alt="Portfolio_Website" width="100px" height="100px"/>
+            <div className={styles.itemText}>
+              <h3>Portfolio Website</h3>
+              <p>This is my Personal Portfolio Website</p>
+            </div>  
           </div>
           <div className={styles.items}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS Logo" width="100px" height="100px"/>
@@ -42,4 +42,4 @@ function App() {
   
 }
 
-export default App
+export default Home

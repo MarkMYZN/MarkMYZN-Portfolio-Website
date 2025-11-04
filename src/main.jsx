@@ -1,10 +1,28 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import './index.css'
-import App from './1_Pages/1_Home/home.jsx';
+
+import Home from './1_Pages/1_Home/home.jsx';
+import About from './1_Pages/2_about/about.jsx';
+import Skills from './1_Pages/3_skills/skills.jsx';
+import Contact from './1_Pages/4_contact/contact.jsx';
+import Reccomendations from './1_Pages/5_Reccomendations/reccoms.jsx';
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/recommendations" element={<Reccomendations />} />
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )
