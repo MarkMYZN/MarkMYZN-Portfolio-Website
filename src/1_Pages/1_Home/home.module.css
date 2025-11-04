@@ -1,0 +1,96 @@
+.homepage {
+    margin-top: 325px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+}
+
+.homepage h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.homepage h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    color: #99aab5;
+}
+
+
+.divider {
+    margin: 225px auto 0; 
+    height: 5px;
+    border-radius: 5px;
+    background-color: #444d63;
+    width: 80%;
+}
+
+.projHeader {
+    margin: 100px 0;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+.items {
+    display: flex;
+    align-items: center;
+    background-color: #444d63;
+    border: 1px solid #4a4c51;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.items img {
+    display: flex;
+    width: clamp(80px, 10vw, 120px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.itemText h3 {
+    margin: 0 0 8px;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    text-align: left;
+}
+
+.itemText p {
+    margin: 0;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: #e0e0e0;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* For responsive mobile */
+@media (max-width: 700px) {
+    .items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .items img {
+        margin: 0 0 15px 0;
+        width: 60%;
+        max-width: 200px;
+        height: auto;
+    }
+}
