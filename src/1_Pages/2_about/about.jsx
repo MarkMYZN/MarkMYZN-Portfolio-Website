@@ -6,7 +6,7 @@ import aboutStyle from './about.module.css'
 function Skills() {
   return(
     <>
-    <title>MarkOpSec's Skills</title>
+    <title>About me</title>
       <NavBar />
       <div>
         <h1 className={aboutStyle.aboutHeader}>
