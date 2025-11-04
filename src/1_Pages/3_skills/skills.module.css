@@ -1,0 +1,18 @@
+.skills h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.skills h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  color: #99aab5;
+}
+
+.skillHeader {
+  margin: 100px 0;
+  text-align: center;
+  font-family: "Inria Sans", sans-serif;
+  color: white;
+}
