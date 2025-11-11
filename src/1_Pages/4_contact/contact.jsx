@@ -1,14 +1,13 @@
-import React from 'react'
-import NavBar from '../../2_Components/1_navbar/navbar.jsx'
+import React from "react";
+import NavBar from "../../2_Components/1_navbar/navbar.jsx";
 
 function Contact() {
-  return(
+  return (
     <>
-    <title>MarkOpSec's Portfolio Website</title>
+      <title>MarkOpSec's Portfolio Website</title>
       <NavBar />
     </>
-  )
-  
+  );
 }
 
-export default Contact
+export default Contact;

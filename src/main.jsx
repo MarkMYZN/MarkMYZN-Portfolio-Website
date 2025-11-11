@@ -1,28 +1,25 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './index.css'
+import "./index.css";
 
-import Home from './1_Pages/1_Home/home.jsx';
-import About from './1_Pages/2_about/about.jsx';
-import Skills from './1_Pages/3_skills/skills.jsx';
-import Contact from './1_Pages/4_contact/contact.jsx';
-import Reccomendations from './1_Pages/5_Reccomendations/reccoms.jsx';
+import Home from "./1_Pages/1_Home/home.jsx";
+import About from "./1_Pages/2_about/about.jsx";
+import Skills from "./1_Pages/3_skills/skills.jsx";
+import Contact from "./1_Pages/4_contact/contact.jsx";
+import Recommendations from "./1_Pages/5_Recommendations/recomms.jsx";
 
-
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/recommendations" element={<Reccomendations />} />
+        <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);

@@ -1,26 +1,27 @@
-.about h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 10px;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-  font-weight: 700;
-  font-family: "Inria Sans", sans-serif;
-}
-
-.about h2 {
-  margin: auto;
-  padding: 25px;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  text-justify: auto;
-  text-indent: 60px;
-  font-family: "Inria Sans", sans-serif;
-  color: #e5f5ff;
-}
-
 .aboutHeader {
-  margin: 100px 0;
   text-align: center;
-  font-family: "Inria Sans", sans-serif;
   color: white;
+  font-family: "Inria Sans", sans-serif;
+  margin: 40px 0 20px 0;
+  padding-top: 100px;
+  font-size: 2rem;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+  .aboutHeader {
+    font-size: 1.5rem;
+    padding: 70px;
+  }
+
+  .cardWrapper {
+    padding: 5px;
+  }
 }
