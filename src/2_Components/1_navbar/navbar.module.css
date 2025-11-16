@@ -1,75 +1,57 @@
-.btnContainer {
+section {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #2b2d31;
-  border: 1px solid #4a4c51;
+  justify-content: center;
   position: fixed;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  width: 90%;
-  max-width: 1200px;
-  min-width: 280px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  gap: 180px;
+  width: 1250px;
+  height: 50px;
+  background-color: #303335;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  border-color: #444d63;
 }
 
-button {
-  font-size: clamp(0.85rem, 1.3vw, 1.1rem);
-  font-family: "Inria Sans", sans-serif;
-  color: azure;
+.btnItem {
   background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px 15px;
-}
-
-button:hover {
-  color: #b3c6ff;
-  background-color: #4a4c51;
-  border-radius: 5px;
-}
-
-.active {
-  background-color: #4a4c51;
+  border-color: transparent;
   color: white;
-  border: 1px solid #4a4c51;
-  border-radius: 5px;
+  border-radius: 10px;
+  align-content: center;
+  padding: 5px;
+  font-size: larger;
 }
 
 .contact {
-  display: flex;
-  padding: 5px 15px;
   background-color: #5865f2;
   border-radius: 5px;
-  border: 2px solid #4a4c51;
+  border: 2px solid #444d63;
   color: white;
-  font-weight: 500;
+  font-size: larger;
   transition: background-color 0.2s ease;
 }
-.contact:hover {
-  background-color: #4753d9;
-}
 
-@media (max-width: 360px) {
-  .btnContainer {
-    gap: 10px;
-    padding: 6px 8px;
-    width: 95%;
+@media (max-width: 320px) {
+  nav {
+    width: 300px;
+    height: 40px;
+    gap: 1px;
   }
 
-  button {
-    font-size: clamp(0.7rem, 3vw, 0.95rem);
-    padding: 4px 8px;
+  .btnItem {
+    padding: 1px;
+    font-size: smaller;
   }
 
-  .home1,
   .contact {
-    padding: 4px 8px;
+    font-size: x-small;
   }
 }

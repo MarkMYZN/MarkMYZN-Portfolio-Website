@@ -1,94 +1,80 @@
-.homepage {
-  margin-top: 325px;
-  margin-left: 25px;
-  font-size: 25px;
-  font-family: "Inria Sans", sans-serif;
-  color: white;
+.sect1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 290px;
+	margin-left: 100px;
+	color: white;
+	font-family: "Inria Sans", sans-serif;
 }
 
-.homepage h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 10px;
-  font-weight: 700;
+.sect1 h1 {
+	font-size: 50px;
 }
 
-.homepage h2 {
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-  font-weight: 400;
-  color: #99aab5;
+.sect1 h2 {
+	font-size: 25px;
+	color: #40444b;
 }
 
-@media (max-width: 1024px) {
-  .homepage {
-    margin-top: 200px;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 20px;
-  }
+.sect2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 220px;
 }
 
-@media (max-width: 768px) {
-  .homepage {
-    margin-top: 150px;
-    padding: 0 15px;
-  }
-
-  .homepage h1 {
-    font-size: 1.8rem;
-  }
-
-  .homepage h2 {
-    font-size: 1rem;
-  }
+.card1 {
+	width: 1250px;
+	height: 5px;
+	border-radius: 15px;
+	background-color: #444d63;
 }
 
-@media (max-width: 360px) {
-  .homepage {
-    margin-top: 120px;
-    padding: 0 10px;
-  }
-
-  .homepage h1 {
-    font-size: 1.5rem;
-  }
-
-  .homepage h2 {
-    font-size: 0.9rem;
-  }
+.sect3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.projHeader {
-  margin: 100px 0;
-  text-align: center;
-  font-family: "Inria Sans", sans-serif;
-  color: white;
-  padding: 0 15px;
+.sect3 h1 {
+	margin-top: 50px;
+	font-family: "Inria Sans", sans-serif;
+	color: white;
 }
 
-.projHeader h1 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
-.projectCards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
+.card2 {
+	width: 900px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	border-radius: 15px;
+	background-color: #444d63;
+	color: white;
+	font-family: "Inria Sans", sans-serif;
 }
 
-@media (max-width: 768px) {
-  .projectCards {
-    gap: 25px;
-    text-align: center;
-  }
+.cardImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (max-width: 360px) {
-  .projectCards {
-    padding: 0 5px;
-  }
+.cardImg img {
+	border-radius: 15px;
+}
+
+.cardText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
 }

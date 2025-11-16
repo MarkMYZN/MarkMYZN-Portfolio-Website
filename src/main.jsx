@@ -15,9 +15,10 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/recommendations" element={<Recommendations />} />
+        <Route path="/tech-picks" element={<Recommendations />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

@@ -1,25 +1,20 @@
 export default function Card({
-  title,
-  description,
-  image,
-  imageStyle,
-  titleStyle,
-  descStyle,
-  cardStyle,
-  style,
-  children,
+	title,
+	description,
+	image,
+	className,
+	textContainer,
+	imageHandler,
 }) {
-  return (
-    <div className="card" style={style}>
-      {/* Left side: image */}
-      {image && <img src={image} alt={title} style={imageStyle} />}
-
-      <div style={{ cardStyle }}>
-        {title && <h1 style={titleStyle}>{title}</h1>}
-        {description && <p style={descStyle}>{description}</p>}
-      </div>
-
-      {children}
-    </div>
-  );
+	return (
+		<div className={className}>
+			<div className={imageHandler}>
+				{image && <img src={image} alt={title} />}
+			</div>
+			<div className={textContainer}>
+				{title && <h1>{title}</h1>}
+				{description && <h3>{description}</h3>}
+			</div>
+		</div>
+	);
 }
