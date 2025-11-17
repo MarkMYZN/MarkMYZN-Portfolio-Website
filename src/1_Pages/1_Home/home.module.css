@@ -78,3 +78,72 @@
 	justify-content: center;
 	gap: 5px;
 }
+
+@media (max-width: 320px) {
+	.sect1 {
+		margin-top: 150px;
+		margin-left: 25px;
+	}
+
+	.sect1 h1 {
+		font-size: 25px;
+	}
+	.sect1 h2 {
+		font-size: 12.5px;
+	}
+
+	.sect2 {
+		margin-top: 110px;
+	}
+
+	/* divider */
+	.card1 {
+		width: 310px;
+	}
+
+	.sect3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.sect3 h1 {
+		margin-top: 50px;
+		font-size: 25px;
+		font-family: "Inria Sans", sans-serif;
+		color: white;
+	}
+
+	.container {
+		width: 310px;
+	}
+
+	.card2 {
+		width: 250px;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		border-radius: 15px;
+		background-color: #444d63;
+		color: white;
+		font-family: "Inria Sans", sans-serif;
+	}
+
+	.cardImg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cardImg img {
+		border-radius: 15px;
+		width: 110px;
+		height: 110px;
+	}
+
+	.cardText {
+		gap: 5px;
+		font-size: 10px;
+	}
+}

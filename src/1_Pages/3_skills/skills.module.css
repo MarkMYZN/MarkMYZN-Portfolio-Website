@@ -1,43 +1,51 @@
-.skills h1 {
-  font-size: clamp(5rem, 4vw, 3rem);
-  margin-bottom: 10px;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-  font-weight: 700;
-  font-family: "Inria Sans", sans-serif;
+h5 {
+	color: white;
+	text-align: center;
+	font-family: "Inria Sans", sans-serif;
 }
 
-.skills h2 {
-  margin: auto;
-  padding: 25px;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  text-justify: auto;
-  text-indent: 60px;
-  font-family: "Inria Sans", sans-serif;
-  color: #e5f5ff;
+.skillContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 
-.skillHeader {
-  margin-top: 90px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "Inria Sans", sans-serif;
-  color: white;
+.card {
+	background-color: #40444b;
+	border-radius: 15px;
+	width: 300px;
+	height: 350px;
+	color: white;
+	text-align: center;
+	font-family: "Inria Sans", sans-serif;
 }
 
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  row-gap: 10px;
-  column-gap: 47px;
-  padding: 40px;
-  justify-items: center;
+.card img {
+	margin-top: 30px;
+	justify-content: center;
+	width: 200px;
+}
+
+.headTxt {
+	margin-top: 70px;
+	color: white;
 }
 
 @media (max-width: 320px) {
-  .gridContainer {
-    column-gap: 1px;
-    padding: 15px;
-  }
+	.card {
+		width: 300px;
+		height: 350px;
+	}
+
+	.card img {
+		margin-top: 30px;
+		justify-content: center;
+		width: 200px;
+	}
+
+	.headTxt {
+		margin-top: 70px;
+		color: white;
+	}
 }

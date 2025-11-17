@@ -1,27 +1,51 @@
 import React from "react";
 import styles from "./navbar.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
-  return (
-    <section>
-      <nav>
-        <Link to="/home">
-          <button className={styles.btnItem}>Home</button>
-        </Link>
-        <Link to="/about">
-          <button className={styles.btnItem}>About</button>
-        </Link>
-        <Link to="/skills">
-          <button className={styles.btnItem}>Skills</button>
-        </Link>
-        <Link to="/tech-picks">
-          <button className={styles.btnItem}>Tech Picks</button>
-        </Link>
-        <Link to="/contact">
-          <button className={styles.contact}>Contact Me!</button>
-        </Link>
-      </nav>
-    </section>
-  );
+	return (
+		<section>
+			<nav>
+				<NavLink
+					to="/home"
+					className={({ isActive }) =>
+						isActive ? styles.btnItemActive : styles.btnItem
+					}>
+					Home
+				</NavLink>
+
+				<NavLink
+					to="/about"
+					className={({ isActive }) =>
+						isActive ? styles.btnItemActive : styles.btnItem
+					}>
+					About
+				</NavLink>
+
+				<NavLink
+					to="/skills"
+					className={({ isActive }) =>
+						isActive ? styles.btnItemActive : styles.btnItem
+					}>
+					Skills
+				</NavLink>
+
+				<NavLink
+					to="/tech-picks"
+					className={({ isActive }) =>
+						isActive ? styles.btnItemActive : styles.btnItem
+					}>
+					Tech Picks
+				</NavLink>
+
+				<NavLink
+					to="/contact"
+					className={({ isActive }) =>
+						isActive ? styles.contactActive : styles.contact
+					}>
+					Contact Me!
+				</NavLink>
+			</nav>
+		</section>
+	);
 }

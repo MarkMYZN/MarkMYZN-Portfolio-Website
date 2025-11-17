@@ -1,57 +1,122 @@
 section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  gap: 180px;
-  width: 1250px;
-  height: 50px;
-  background-color: #303335;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  border-color: #444d63;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	gap: 200px;
+	width: 1250px;
+	height: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 15px;
+	background-color: #303335;
+	border-color: #444d63;
 }
 
 .btnItem {
-  background-color: transparent;
-  border-color: transparent;
-  color: white;
-  border-radius: 10px;
-  align-content: center;
-  padding: 5px;
-  font-size: larger;
+	color: white;
+	border-radius: 10px;
+	align-content: center;
+	text-decoration: none;
+	font-size: larger;
+	font-family: "Inria Sans", sans-serif;
+}
+
+.btnItem:hover {
+	cursor: pointer;
+	color: white;
+	border-radius: 10px;
+	align-content: center;
+	text-decoration: none;
+	padding: 10px;
+	font-size: larger;
+	font-family: "Inria Sans", sans-serif;
+	background-color: #444d63;
+}
+
+.btnItemActive {
+	color: white;
+	background-color: #444d63;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 10px;
+	font-size: larger;
+	font-family: "Inria Sans", sans-serif;
 }
 
 .contact {
-  background-color: #5865f2;
-  border-radius: 5px;
-  border: 2px solid #444d63;
-  color: white;
-  font-size: larger;
-  transition: background-color 0.2s ease;
+	background-color: #5865f2;
+	border-radius: 10px;
+	color: white;
+	font-size: larger;
+	text-decoration: none;
+	font-family: "Inria Sans", sans-serif;
+	transition: background-color 0.2s ease;
+	padding: 10px;
+}
+
+.contact:hover {
+	cursor: pointer;
+	color: white;
+	border-radius: 10px;
+	align-content: center;
+	text-decoration: none;
+	padding: 10px;
+	font-size: larger;
+	font-family: "Inria Sans", sans-serif;
+	background-color: #454fbf;
+}
+
+.contactActive {
+	text-decoration: none;
+	font-family: "Inria Sans", sans-serif;
+	background-color: #454fbf;
+	padding: 10px;
+	font-size: larger;
+	border-radius: 10px;
+	color: white;
 }
 
 @media (max-width: 320px) {
-  nav {
-    width: 300px;
-    height: 40px;
-    gap: 1px;
-  }
+	nav {
+		width: 300px;
+		height: 40px;
+		gap: 1px;
+	}
 
-  .btnItem {
-    padding: 1px;
-    font-size: smaller;
-  }
+	.btnItem {
+		padding: 1px;
+		font-size: smaller;
+	}
 
-  .contact {
-    font-size: x-small;
-  }
+	.btnItem:hover {
+		text-decoration: none;
+		padding: 5px;
+		font-size: smaller;
+		font-family: "Inria Sans", sans-serif;
+		background-color: #444d63;
+	}
+
+	.btnItemActive {
+		padding: 5px;
+		font-size: smaller;
+		font-family: "Inria Sans", sans-serif;
+	}
+
+	.contact {
+		font-size: x-small;
+	}
+
+	.contactActive {
+		padding: 5px;
+		font-size: smaller;
+		font-family: "Inria Sans", sans-serif;
+		color: white;
+	}
 }

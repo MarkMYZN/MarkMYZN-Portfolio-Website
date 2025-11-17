@@ -3,9 +3,10 @@ import NavBar from "../../2_Components/1_navbar/navbar.jsx";
 import aboutStyle from "./about.module.css";
 import Card from "../../2_Components/3_Card/card.jsx";
 
-export default function Skills() {
+export default function About() {
 	return (
 		<>
+			<title>About Me - Portfolio</title>
 			<NavBar />
 
 			<section className={aboutStyle.aboutHeader}>

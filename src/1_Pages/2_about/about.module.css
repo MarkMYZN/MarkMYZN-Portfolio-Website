@@ -8,7 +8,7 @@
 
 .cardContainer1 {
 	width: 1300px;
-	height: 320px;
+	height: auto;
 	border-radius: 15px;
 	background-color: #444d63;
 	white-space: pre-line;
@@ -21,7 +21,7 @@
 }
 .cardContainer2 {
 	width: 1300px;
-	height: 390px;
+	height: auto;
 	border-radius: 15px;
 	background-color: #444d63;
 	white-space: pre-line;
@@ -33,12 +33,20 @@
 	text-align: center;
 }
 
-.card1 {
-	white-space: pre-line;
-	display: flex;
-	color: white;
-	font-size: 1.5rem;
-	justify-content: center;
-	font-family: "Inria Sans", sans-serif;
-	text-align: center;
+@media (max-width: 320px) {
+	.aboutHeader {
+		padding-top: 70px;
+		font-size: 12px;
+	}
+
+	.cardContainer1 {
+		width: 290px;
+		height: auto;
+		font-size: 1rem;
+	}
+	.cardContainer2 {
+		width: 290px;
+		height: auto;
+		font-size: 1rem;
+	}
 }
