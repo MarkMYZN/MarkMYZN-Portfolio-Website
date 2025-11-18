@@ -30,12 +30,17 @@ h5 {
 .headTxt {
 	margin-top: 70px;
 	color: white;
+	font-family: "Inria Sans", sans-serif;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
+	.headTxt {
+		margin-top: 100px;
+	}
+
 	.card {
-		width: 300px;
-		height: 350px;
+		width: 290px;
+		height: auto;
 	}
 
 	.card img {

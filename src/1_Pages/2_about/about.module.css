@@ -7,45 +7,46 @@
 }
 
 .cardContainer1 {
-	width: 1300px;
-	height: auto;
-	border-radius: 15px;
-	background-color: #444d63;
-	white-space: pre-line;
 	display: flex;
-	color: white;
-	font-size: 1.5rem;
-	justify-content: center;
-	font-family: "Inria Sans", sans-serif;
+	height: auto;
+	width: 1200px;
 	text-align: center;
+	white-space: pre-line;
+	justify-content: center;
+	text-justify: auto;
+	font-family: "Inria Sans", sans-serif;
+	font-size: 20px;
+	border-radius: 15px;
+	color: white;
+	background-color: #444d63;
 }
 .cardContainer2 {
-	width: 1300px;
-	height: auto;
-	border-radius: 15px;
-	background-color: #444d63;
-	white-space: pre-line;
 	display: flex;
-	color: white;
-	font-size: 1.5rem;
-	justify-content: center;
-	font-family: "Inria Sans", sans-serif;
+	height: auto;
+	width: 1200px;
 	text-align: center;
+	white-space: pre-line;
+	justify-content: center;
+	text-justify: auto;
+	font-family: "Inria Sans", sans-serif;
+	font-size: 20px;
+	border-radius: 15px;
+	color: white;
+	background-color: #444d63;
 }
-
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
 	.aboutHeader {
 		padding-top: 70px;
 		font-size: 12px;
 	}
 
 	.cardContainer1 {
-		width: 290px;
+		width: auto;
 		height: auto;
 		font-size: 1rem;
 	}
 	.cardContainer2 {
-		width: 290px;
+		width: auto;
 		height: auto;
 		font-size: 1rem;
 	}

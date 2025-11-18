@@ -9,14 +9,12 @@ nav {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	gap: 200px;
+	gap: 180px;
 	width: 1250px;
 	height: 50px;
-	border-style: solid;
-	border-width: 2px;
+	border: 2px solid #444d63;
 	border-radius: 15px;
 	background-color: #303335;
-	border-color: #444d63;
 }
 
 .btnItem {
@@ -25,7 +23,9 @@ nav {
 	align-content: center;
 	text-decoration: none;
 	font-size: larger;
+	padding: 10px;
 	font-family: "Inria Sans", sans-serif;
+	transition: background-color 0.2s ease;
 }
 
 .btnItem:hover {
@@ -34,7 +34,6 @@ nav {
 	border-radius: 10px;
 	align-content: center;
 	text-decoration: none;
-	padding: 10px;
 	font-size: larger;
 	font-family: "Inria Sans", sans-serif;
 	background-color: #444d63;
@@ -45,8 +44,9 @@ nav {
 	background-color: #444d63;
 	border-radius: 10px;
 	text-decoration: none;
-	padding: 10px;
 	font-size: larger;
+	padding: 10px;
+
 	font-family: "Inria Sans", sans-serif;
 }
 
@@ -55,10 +55,10 @@ nav {
 	border-radius: 10px;
 	color: white;
 	font-size: larger;
+	padding: 10px;
 	text-decoration: none;
 	font-family: "Inria Sans", sans-serif;
 	transition: background-color 0.2s ease;
-	padding: 10px;
 }
 
 .contact:hover {
@@ -67,7 +67,6 @@ nav {
 	border-radius: 10px;
 	align-content: center;
 	text-decoration: none;
-	padding: 10px;
 	font-size: larger;
 	font-family: "Inria Sans", sans-serif;
 	background-color: #454fbf;
@@ -83,21 +82,21 @@ nav {
 	color: white;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 1250px) {
 	nav {
-		width: 300px;
+		gap: 2px;
+		width: 320px;
 		height: 40px;
-		gap: 1px;
 	}
 
 	.btnItem {
-		padding: 1px;
+		gap: 0px;
 		font-size: smaller;
+		padding: 5px;
 	}
 
 	.btnItem:hover {
 		text-decoration: none;
-		padding: 5px;
 		font-size: smaller;
 		font-family: "Inria Sans", sans-serif;
 		background-color: #444d63;

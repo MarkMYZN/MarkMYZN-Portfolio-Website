@@ -32,11 +32,13 @@ export default function About() {
 					className={aboutStyle.cardContainer2}
 					description={`My work style mixes introverted and extroverted traits.
                       I start by observing and working independently but become more engaged over time.
-                      I learn best by seeing and doing, experimenting and tinkering until I become content with it, or until something works to my liking.
+                      I learn best by seeing and doing, experimenting and tinkering until I become content with it,
+											or until something works to my liking.
 
-                      I enjoy collaborating, combining ideas to find better solutions with a team and make everyone feel included.
-                      I’m improving my communication, as I sometimes struggle to express myself or speak up.
-                      I handle pressure well, though sudden changes can overwhelm me and require time to process.`}
+                      I enjoy collaborating, combining ideas to find bettersolutions with a team
+											and make everyone feel included. I’m improving my communication,
+											as I sometimes struggle to express myself or speak up. I handle pressure well, though
+											sudden changes can overwhelm me and require time to process.`}
 				/>
 			</section>
 		</>
