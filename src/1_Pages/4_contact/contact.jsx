@@ -61,18 +61,3 @@ export default function Contact() {
 		</>
 	);
 }
-
-// <h1>Github</h1>
-// <image
-// 	src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-// 	className={styles.imgSettings}></image>
-// <h1>Facebook</h1>
-// <image
-// 	src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg"
-// 	className={styles.imgSettings}></image>
-// <h1>Gmail</h1>
-// <image src="https://www.svgrepo.com/show/452213/gmail.svg" className={styles.imgSettings}></image>
-// <h1>LinkedIn</h1>
-// <image
-// 	src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-// 	className={styles.imgSettings}></image>
