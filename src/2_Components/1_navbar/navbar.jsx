@@ -7,7 +7,7 @@ export default function NavBar() {
 		<section>
 			<nav>
 				<NavLink
-					to="/home"
+					to="/"
 					className={({ isActive }) =>
 						isActive ? styles.btnItemActive : styles.btnItem
 					}>

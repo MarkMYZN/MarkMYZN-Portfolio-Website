@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
@@ -12,14 +12,14 @@ import Recommendations from "./1_Pages/5_Recommendations/recomms.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<BrowserRouter basename={import.meta.env.BASE_URL}>
+		<HashRouter>
 			<Routes>
-				<Route path="/home" element={<Home />} />
+				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/skills" element={<Skills />} />
 				<Route path="/tech-picks" element={<Recommendations />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	</StrictMode>
 );
